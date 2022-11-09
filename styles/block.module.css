@@ -1,0 +1,17 @@
+.block {
+    width: 50px;
+    height: 50px;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;          
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.block:hover {
+    cursor: pointer;
+    transform: scale(0.88);
+    transition: ease-in-out 0.1s
+}

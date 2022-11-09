@@ -1,0 +1,24 @@
+.container {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.block-picker {
+    background-color: rgba(80, 80, 80, 80);
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex
+}
+
+.block-picker > * {
+    display: block;
+    margin: 0 5px;
+}
+
+.block-picker > *:hover {
+    cursor: pointer;
+}
