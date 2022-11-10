@@ -1,0 +1,21 @@
+.button {
+    background-color: #2A8379;
+    border: 1px solid #1C5659;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    min-width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+.fullWidth {
+    width: 600px;
+}

@@ -1,6 +1,5 @@
 .container {
     width: 600px;
-    margin-bottom: 18px;
 }
 
 .form {
@@ -15,6 +14,11 @@
 
 .form:focus-within {
     border-color: #2A8379;
+}
+
+.error {
+    border-color: #d65353 !important;
+    transition: border ease-in-out 0.1s;
 }
 
 .label {
@@ -34,7 +38,7 @@
     color: #fff;
     font-size: 1rem;
     outline: none;
-    margin: 0 10px 0 0;
+    margin: 0;
 }
 
 .submitButton {
