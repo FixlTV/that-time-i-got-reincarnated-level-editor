@@ -26,9 +26,9 @@ export default function SaveMenu(props: { setVisible: any, content: any, setCont
             props.data.forEach((b: any) => {
                 if(datastring.split('\n')[datastring.split('\n').length - 1].split(' ').length == props.width + 1) datastring += '\n';
                 datastring += b.id;
-                datastring += ' ';
+                datastring += ',';
             })
-            datastring = datastring.trim()
+            datastring = datastring.replaceAll(',\n', '\n')
             blob = new Blob([datastring])
             element.href = URL.createObjectURL(blob);
             element.download = `${fileName.replaceAll(' ', '_').toLowerCase()}`;
