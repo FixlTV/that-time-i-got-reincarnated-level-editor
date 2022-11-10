@@ -42,7 +42,7 @@ export default function SaveMenu(props: { setVisible: any, content: any, setCont
         <Interface label='That time someone downloaded the level files' setVisible={props.setVisible}>
             <InputField label="Dateiname" defaultValue={props.content || "level"} onSubmit={save} submitButtonText="Herunterladen" setContent={props.setContent} />
             <Button text="Testknopf" onClick={(e: any) => {}} />
-            <Button text="Full Size Knopf" onClick={(e: any) => {}} fullWidth={true} />
+            <Button text="Full Size Knopf" onClick={(e: any) => {}} fillColumn={true} />
         </Interface>
     )
 }
