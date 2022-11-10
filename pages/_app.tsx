@@ -16,6 +16,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="msapplication-TileColor" content="#1e1e1e" />
         <meta name="msapplication-config" content="/images/browserconfig.xml" />
         <meta name="theme-color" content="#1e1e1e" />
+
+        <meta content="Jürgen Level Editor" property="og:title" />
+        <meta content='Offizieller Level Editor für "That time I got reincarnated as Jürgen and ran all over the world just to order a pizza"' property="og:description" />
+        <meta content="https://juergen.vercel.app/" property="og:url" />
+        <meta content="https://juergen.vercel.app/images/jürgen-xxl.png" property="og:image" />
+        <meta content="#2A8379" data-react-helmet="true" name="theme-color" />
       </Head>
       <Component {...pageProps} />
     </>
