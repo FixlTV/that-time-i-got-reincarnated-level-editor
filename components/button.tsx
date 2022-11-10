@@ -4,7 +4,7 @@ export default function Button(props: { onClick: any, fillColumn?: boolean, text
 
 
     return (
-        <div className={`${style.button} ${props.fillWidth ? style.fullWidth : ''}`} onClick={onClick}>
+        <div className={`${style.button} ${props.fillColumn ? style.fullWidth : ''}`} onClick={onClick}>
             {text}
         </div>
     )
