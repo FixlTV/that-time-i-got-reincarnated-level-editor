@@ -17,7 +17,9 @@ export default function Interface(props: { label: string, [key: string]: any, se
                     <div className={style.close} onClick={close}>
                         <img draggable="false" src="/images/close.png" alt="close" width={20} height={20} />
                     </div>
-                    {props.children}
+                    <div className={style.content}>
+                        {props.children}
+                    </div>
                 </div>
                 <div className={style.bottomBar}>
                     <div className={style.submitButton} onClick={close}>{props.submitButtonText || 'Schließen'}</div>
