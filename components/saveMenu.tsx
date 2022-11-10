@@ -1,5 +1,6 @@
 import InputField from "./inputField";
 import Interface from "./interface";
+import Button from "./button";
 
 export default function SaveMenu(props: { setVisible: any, content: any, setContent: any, data: any, width: number, height: number }) {
 
@@ -40,6 +41,8 @@ export default function SaveMenu(props: { setVisible: any, content: any, setCont
     return (
         <Interface label='That time someone downloaded the level files' setVisible={props.setVisible}>
             <InputField label="Dateiname" defaultValue={props.content || "level"} onSubmit={save} submitButtonText="Herunterladen" setContent={props.setContent} />
+            <Button text="Testknopf" onClick={(e: any) => {}} />
+            <Button text="Full Size Knopf" onClick={(e: any) => {}} fullWidth={true} />
         </Interface>
     )
 }
