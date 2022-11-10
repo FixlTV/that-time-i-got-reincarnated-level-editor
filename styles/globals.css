@@ -11,6 +11,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
     font-size: 1rem;
+    overflow: auto;
 }
 
 body {
