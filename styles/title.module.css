@@ -5,6 +5,7 @@
     width: 100%;
     justify-content: center;
     position: fixed;
+    z-index: 1;
 }
 
 .text {
