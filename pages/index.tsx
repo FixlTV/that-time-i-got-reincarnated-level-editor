@@ -23,7 +23,7 @@ export default function Home() {
         })()
     );
     const [titleRef, { height: titleHeight }] = useMeasure();
-    const [saveInterfaceVisible, setSaveInterfaceVisibility] = useState(true);
+    const [saveInterfaceVisible, setSaveInterfaceVisibility] = useState(false);
     const [fileName, setFileName] = useState('level');
 
     useEffect(() => {}, [height, width, saveInterfaceVisible]);
